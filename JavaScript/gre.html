@@ -1,0 +1,45 @@
+<html>
+    <head><title>
+        DOM in javaScript...</title>
+        <script> 
+        function sum(){
+            var m=Number(frm1.no1.value);
+            var n=Number(frm1.no2.value);
+            var i;
+            i=m+n;
+            frm1.result.value=i;
+        }
+        
+        function sub(){
+            var m=Number(frm1.no1.value);
+            var n=Number(frm1.no2.value);
+            var i;
+            i=m-n;
+            frm1.result.value=i;
+        }
+        function fact(){
+            var fact=1;
+            for(i=1;i<n;i++)
+            {
+                fact=fact*i;}
+                frm1.result.value=fact;} 
+                </script>
+    
+    
+    </head>
+    <body>
+        <h1> Calculation thru javaScript& HTML form...</h1>
+        <table>
+            <form name="frm1" method=get()>
+                <tr><td>No 1:<td><input type="text" name=no1 value=""></td></tr>
+                <tr><td>No 2:<td> <input type="text" name="no2" value=""></td></tr>
+                <tr><td> Result:<td> <input type= text name="result" value=""></td></tr>
+                <tr><td><input type="button" name="add" value="Addition" onclick=sum(this.form);></td>
+                <td><input type=button name="ok" value="Subtraction" onclick=sub(this.form);></td> 
+                <td><input type=reset name="reset" value="Reset" onclick=fact(this.form);></td>
+                <td><input type=button name="read" value="Factorial">
+            </form>
+        </table>
+
+    </body>
+    </html>
